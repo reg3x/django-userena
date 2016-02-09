@@ -2,21 +2,35 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>{% block title %}Userena{% endblock %}</title>
-  {% block meta %}{% endblock %}
-</head>
-<body id="{% block body_id %}{% endblock %}" class="{% block body_class %}{% endblock %}">
-  <div id="body">
-    {% block body %}
-      <div class="content_title">
-        {% block content_title %}{% endblock %}
-      </div>
-      <div class="content">
-        {% block content %}{% endblock %}
-      </div>
-    {% endblock %}
-  </div>
-</body>
+    <head>
+        <!-- Bootstrap Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>{% block title %}CyberWisdom{% endblock %}</title>
+        {% block meta %}{% endblock %}
+    </head>
+    <body id="{% block body_id %}{% endblock %}" class="{% block body_class %}{% endblock %}">
+        <div id="body">
+            {% block body %}
+            <div class="content_title">
+                {% block content_title %}{% endblock %}
+            </div>
+                <div class="content">
+                    {% block content %}{% endblock %}
+                </div>
+            {% endblock %}
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Bootstrap Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+              crossorigin="anonymous"></script>
+    </body>
 </html>
